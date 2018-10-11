@@ -19,6 +19,9 @@ new Vue({
            event.offsetY = 0;
 
            console.log(event);
+       },
+       click: function(){
+           alert('You clicked me');
        }
     }
 });
