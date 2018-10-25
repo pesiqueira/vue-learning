@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>
+        <h1 v-on:click="changeTitle">
             {{title}}
         </h1>
     </header>
@@ -10,11 +10,20 @@
 
 
 export default {
-  data () {
-    return {
-        title: 'Vue Ninjas'
+    props:{
+        title:{
+            type:String
+        }
+    },
+    data () {
+        return {
+        }
+    },
+    methods:{
+        changeTitle: function(){
+            this.title = "Vue Wizards"
+        }
     }
-  }
 }
 </script>
 
