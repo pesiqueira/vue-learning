@@ -6,7 +6,7 @@ new Vue({
     },
     methods:{
         logName: function(){
-            this.name = 
+            this.name = ""
         },
         logAge: function(){
         }
